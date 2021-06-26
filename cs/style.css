@@ -1,47 +1,51 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .header {
     text-align: center;
 }
 
-.checkerboard {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    height: 600px;
-    width: 600px;
-}
-
 .Red-Sq {
     background-color: lightskyblue;
-    width: 80px;
-    height: 80px;
+    height: 100px;
+    width: 100px;
 }
 
 .Black-Sq {
     background-color: grey;
-    width: 80px;
-    height: 80px;
+    height: 100px;
+    width: 100px;
 }
 
 .red-checker {
     width: 55px;
     height: 55px;
-    top: 10px;
-    left: 10px;
     background-color: red;
     border-radius: 50%;
     border: 5px solid white;
-    cursor: grab;
     position: relative;
+    cursor: grab;
+    display: table-cell;
+    box-sizing: border-box;
+    vertical-align: middle;
+    
 }
 
 .black-checker {
+
     width: 55px;
     height: 55px;
-    top: 10px;
-    left: 10px;
     background-color: black;
     border-radius: 50%;
     border: 5px solid white;
     position: relative;
     cursor: grab;
+    display: table-cell;
+    box-sizing: border-box;
+    vertical-align: middle;
+
 }
