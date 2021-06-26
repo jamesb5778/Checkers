@@ -6,18 +6,42 @@
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
-    height: 400px;
-    width: 400px;
+    height: 600px;
+    width: 600px;
 }
 
 .Red-Sq {
-    background-color: red;
-    width: 75px;
-    height: 75px;
+    background-color: lightskyblue;
+    width: 80px;
+    height: 80px;
 }
 
 .Black-Sq {
+    background-color: grey;
+    width: 80px;
+    height: 80px;
+}
+
+.red-checker {
+    width: 55px;
+    height: 55px;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    border-radius: 50%;
+    border: 5px solid white;
+    cursor: grab;
+    position: relative;
+}
+
+.black-checker {
+    width: 55px;
+    height: 55px;
+    top: 10px;
+    left: 10px;
     background-color: black;
-    width: 75px;
-    height: 75px;
+    border-radius: 50%;
+    border: 5px solid white;
+    position: relative;
+    cursor: grab;
 }
