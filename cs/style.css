@@ -9,8 +9,9 @@ main {
     text-align: center;
 }
 
-.table {
+table {
     background-color: gray;
+    text-align: center;
 }
 
 .Red-Sq {

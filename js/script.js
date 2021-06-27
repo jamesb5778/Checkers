@@ -8,5 +8,7 @@ const checkerboard = [
     "BC1", null, "BC2", null, "BC3", null, "BC4", null,
     null, "BC5", null, "BC6", null, "BC7", null, "BC8",
     "BC9", null, "BC10", null, "BC11", null, "BC12", null
-];
+]
+
+//Checker Piece Selector
 
