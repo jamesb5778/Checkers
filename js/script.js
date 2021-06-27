@@ -10,5 +10,10 @@ const checkerboard = [
     "BC9", null, "BC10", null, "BC11", null, "BC12", null
 ]
 
-//Checker Piece Selector
-
+//Red Checker Piece Selector
+$(document).ready(function() {
+    $("p").click(function() {
+        $(this).show();
+        //console.log("Click red checker") This works!
+    })
+});
