@@ -14,6 +14,15 @@ const checkerboard = [
 $(document).ready(function() {
     $("p").click(function() {
         $(this).show();
-        //console.log("Click red checker") This works!
+        console.log("Click red checker");
     })
 });
+
+//Black Checker Piece Selector
+$(document).ready(function() {
+    $("p2").click(function() {
+        $(this).show();
+        console.log("Click black checker");
+    })
+});
+
