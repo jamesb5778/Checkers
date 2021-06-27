@@ -1,12 +1,12 @@
 //Checkeboard layout and starting positions
 const checkerboard = [
-    null, "RC-1", null, "RC-2", null, "RC-3", null, "RC-4",
-    "RC-5", null, "RC-6", null, "RC-7", null, "RC-8", null,
-    null, "RC-9", null, "RC-10", null, "RC-11", null, "RC-12",
+    null, "RC1", null, "RC2", null, "RC3", null, "RC4",
+    "RC5", null, "RC6", null, "RC7", null, "RC8", null,
+    null, "RC9", null, "RC10", null, "RC11", null, "RC12",
     null, null, null, null, null, null, null, null,
     null, null, null, null, null, null, null, null,
-    "BC-1", null, "BC-2", null, "BC-3", null, "BC-4", null,
-    null, "BC-5", null, "BC-6", null, "BC-7", null, "BC-8",
-    "BC-9", null, "BC-10", null, "BC-11", null, "BC-12", null
-]
+    "BC1", null, "BC2", null, "BC3", null, "BC4", null,
+    null, "BC5", null, "BC6", null, "BC7", null, "BC8",
+    "BC9", null, "BC10", null, "BC11", null, "BC12", null
+];
 
