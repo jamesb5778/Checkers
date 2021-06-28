@@ -13,16 +13,20 @@ const checkerboard = [
 // Get all the cells from the table checkerboard
 $('.td');
 
-//Red Checker Declared
+//players information
+const playersTurn = true;
+
+//Red Checker Information
 let redCheckerPiece = [ 
     "Red Checker",
-    
+    redCheckerCount = 12,
 ]
     console.log(redCheckerPiece);
 
-// Black Checker Declared
+// Black Checker Information
 let blackCheckerPiece = [
     "Black Checker",
+    blackCheckerCount = 12,
 ]
     console.log(blackCheckerPiece);
 
@@ -30,19 +34,39 @@ let blackCheckerPiece = [
 $(document).ready(function() {
     $("p").click(function() {
         $(this).show();
-        console.log("Click red checker");
+        console.log("Red Checker Selected");
     })
 });
 
 //Black Checker Piece Selector
 $(document).ready(function() {
     $("p2").click(function() {
-        $(this).show();
-        console.log("Click black checker");
+        $(this).show(); 
+        console.log("Black Checker Selected");
     })
 });
 
 //Highlight the spuare a single checker piece can move too.
-/*function availableSquare() {
-    if(checkerboard[redCheckerPiece.indexOf])
-}*/
+function availableSquare() {
+
+};
+
+//Move Selected Checker Piece
+function moveSelectedPiece() {
+
+};
+
+//Jump Action
+function jumpAction() {
+
+};
+
+// Double multiple jump Action() 
+function jumpMultipleAction() {
+
+};
+
+// Click to Start a New Game
+function startNewGame () {
+
+};
