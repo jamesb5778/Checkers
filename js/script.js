@@ -9,12 +9,21 @@ const checkerboard = [
     null, "BC5", null, "BC6", null, "BC7", null, "BC8",
     "BC9", null, "BC10", null, "BC11", null, "BC12", null
 ]
+
+// Get all the cells from the table checkerboard
+$('.td');
+
 //Red Checker Declared
-let redCheckerPiece = ("Red Checker");
+let redCheckerPiece = [ 
+    "Red Checker",
+    
+]
     console.log(redCheckerPiece);
 
 // Black Checker Declared
-let blackCheckerPiece =("Black Checker");
+let blackCheckerPiece = [
+    "Black Checker",
+]
     console.log(blackCheckerPiece);
 
 //Red Checker Piece Selector
@@ -34,6 +43,6 @@ $(document).ready(function() {
 });
 
 //Highlight the spuare a single checker piece can move too.
-//function availableSquare() {
-    //if(checkerboard[])
-//}
+/*function availableSquare() {
+    if(checkerboard[redCheckerPiece.indexOf])
+}*/
