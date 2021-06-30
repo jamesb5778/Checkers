@@ -10,27 +10,43 @@ const checkerboard = [
     "BC9", null, "BC10", null, "BC11", null, "BC12", null
 ]
 
-// Get all the cells from the table checkerboard
-$('.td');
+// Selecting the all the table cells for the DOM
+const $checkerboard = $("td");
+$(document).ready(function() {
+    $("td").click(function() {
+        $(this).show();
+        console.log("Board Cell clicked");
+    })
+});
 
-//players information
-const playersTurn = true;
+
+//DOM Players Turn
+let $redTurnText = $(".Red-Turn-Text");
+let $blackTurnText = $(".Black-Turn-Text");
+
+// Players Information
+let playersTurn = true;
 
 //Red Checker Information
 let redCheckerPiece = [ 
     "Red Checker",
     redCheckerCount = 12,
+    redCheckerId = -1,
+    redCheckerBoardIndex = -1,
+    $redCheckerPiece = $("p"),
+
 ]
-    console.log(redCheckerPiece);
 
 // Black Checker Information
 let blackCheckerPiece = [
     "Black Checker",
     blackCheckerCount = 12,
+    blackCheckerId = -1,
+    blackCheckerBoardIndex = -1,
+    $blackCheckerPiece = $("p2"),
 ]
-    console.log(blackCheckerPiece);
 
-//Red Checker Piece Selector
+//Red Checker Piece Selector and Event Listener
 $(document).ready(function() {
     $("p").click(function() {
         $(this).show();
@@ -38,13 +54,32 @@ $(document).ready(function() {
     })
 });
 
-//Black Checker Piece Selector
+//Black Checker Piece Selector and Event Listener
 $(document).ready(function() {
     $("p2").click(function() {
         $(this).show(); 
         console.log("Black Checker Selected");
     })
+   
 });
+
+//Event Listeners for Red Checkers
+function redCheckerEventListener() {
+    if (playersTurn) {
+        for(let r = 0; r < redCheckerPiece.length; r++) {
+            redCheckerPiece[r].addEventListener("click", getRedCheckerPiece);
+        }
+    }
+};
+
+//Event Listeners for Black Checkers
+function blackCheckerEventListener() {
+    if (playersTurn) {
+        for (let b = 0; b < blackCheckerPiece.length; b++) {
+            blackCheckerPiece[b].addEventListener("click", getBlackCheckerPiece);
+        }
+    }
+};
 
 //Highlight the spuare a single checker piece can move too.
 function availableSquare() {
@@ -52,8 +87,19 @@ function availableSquare() {
 };
 
 //Move Selected Checker Piece
-function moveSelectedPiece() {
-
+function moveSelectedChecker() {
+    let moveChecker = (checkerboard, redCheckerPiece, newCheckerboard) => {
+        if(newCheckerboard > checkerboard.length -1){
+            console.log("Moved Checker!");
+            return null;
+        } else if (!(checkerboard.includes(redCheckerPiece))){
+            console.log("Cannot move there");
+            return null;
+        }
+        checkerboard.splice(checkerboard.indexOf(redCheckerPiece), 1);
+        checkerboard.splice(redCheckerPiece, newCheckerboard);
+        return checkerboard;
+    }
 };
 
 //Jump Action
@@ -70,3 +116,5 @@ function jumpMultipleAction() {
 function startNewGame () {
 
 };
+
+
