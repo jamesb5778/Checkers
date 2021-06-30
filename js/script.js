@@ -19,7 +19,6 @@ $(document).ready(function() {
     })
 });
 
-
 //DOM Players Turn
 let $redTurnText = $(".Red-Turn-Text");
 let $blackTurnText = $(".Black-Turn-Text");
